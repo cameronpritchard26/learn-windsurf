@@ -51,6 +51,19 @@ python app.py
 
 6. Open your browser and navigate to `http://localhost:5000`
 
+### Production Deployment
+
+⚠️ **Security Note**: This application runs with Flask's debug mode enabled for learning purposes. Before deploying to production:
+
+1. Set `debug=False` in `app.py`
+2. Use a production WSGI server like Gunicorn:
+   ```bash
+   pip install gunicorn
+   gunicorn -w 4 -b 0.0.0.0:5000 app:app
+   ```
+3. Use environment variables for configuration
+4. Implement proper security measures (HTTPS, CORS, rate limiting, etc.)
+
 ## 📚 Windsurf Learning Resources
 
 ### Getting Started

@@ -36,4 +36,7 @@ def health():
     })
 
 if __name__ == '__main__':
+    # NOTE: Debug mode is enabled for learning/development purposes.
+    # In production, set debug=False and use a production WSGI server like gunicorn.
+    # Example: gunicorn -w 4 -b 0.0.0.0:5000 app:app
     app.run(debug=True, host='0.0.0.0', port=5000)
