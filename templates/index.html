@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Windsurf Learning{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to Windsurf Learning! 🌊</h1>
+    <p class="subtitle">A hands-on Python web application to explore Windsurf's AI-powered development</p>
+</div>
+
+<div class="features">
+    <div class="feature-card">
+        <h2>🚀 AI-Powered Development</h2>
+        <p>Experience how Windsurf accelerates your coding with intelligent suggestions and automations.</p>
+    </div>
+    
+    <div class="feature-card">
+        <h2>🎯 Real-time Collaboration</h2>
+        <p>Learn to use Cascade for seamless AI collaboration on your codebase.</p>
+    </div>
+    
+    <div class="feature-card">
+        <h2>📚 Comprehensive Resources</h2>
+        <p>Access curated tutorials, videos, and documentation to master Windsurf.</p>
+    </div>
+</div>
+
+<div class="api-demo">
+    <h2>API Demo</h2>
+    <button id="time-btn" class="btn">Get Current Time</button>
+    <div id="time-display" class="result"></div>
+</div>
+
+<div class="cta">
+    <h2>Ready to Learn?</h2>
+    <p>Check out the <a href="{{ url_for('about') }}">About page</a> for learning resources!</p>
+</div>
+{% endblock %}
